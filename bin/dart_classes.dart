@@ -1,9 +1,10 @@
 //import 'package:dart_classes/dart_classes.dart' as dart_classes;
 
 void main() {
-  final user =  User();
-  user.name = 'Ray';
-  user.id = 40;
+  //using cascade operator
+  final user =  User()
+  ..name = 'Ray'
+  ..id = 40;
   print(user); //all lcasses are derived from an object
   print(user.toJson());
 }
