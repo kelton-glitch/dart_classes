@@ -9,3 +9,17 @@ class Password{
     return 'Password{value: $value}';
   }
 }
+
+void main() {
+  final isValid = Password()
+  //exercise 3
+  //input sample value
+  ..value = 'eey';
+  //bool isValid ;
+
+  if(isValid.value.length > 8) {
+      print('true');
+  } else {
+    print('false');
+  }
+}
