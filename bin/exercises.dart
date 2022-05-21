@@ -10,6 +10,13 @@ class Password{
   }
 }
 
+//default constuctor
+class Address {
+  var value = '';
+}
+
+
+
 void main() {
   final isValid = Password()
   //exercise 3
