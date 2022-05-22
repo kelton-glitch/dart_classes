@@ -5,11 +5,19 @@ void main() {
   final user =  User()
   ..name = 'Ray'
   ..id = 40;
+<<<<<<< HEAD
   final person = Person( age : 28, aim: 'Marriage');
   final anonymousPerson = Person.anonymous();
   print(anonymousPerson);
   print(person);
   print(user); //all classes are derived from an object
+=======
+  final person = Person(28, 'Marriage');
+  final anonymousPerson = Person.anonymous();
+  print(anonymousPerson);
+  print(person);
+  print(user); //all lcasses are derived from an object
+>>>>>>> 90140b1cdde0423a19ecc0ec4e58589677d06726
   print(user.toJson());
 
   final vicki = Person (age: 24, aim: 'Vicki');
@@ -18,6 +26,7 @@ void main() {
 }
 
 //short-form constuctor
+<<<<<<< HEAD
 //edited to named parameter
 class Person{
 Person({this.age = 0, this.aim = 'anonymous' });
@@ -37,6 +46,19 @@ Person.anonymous () : this ();
 //Named constructors
 /// In order to change name to private variable, add _
 /// It makes the library private
+=======
+class Person{
+Person(this.age, this.aim);
+   int age = 0;
+   String aim ='';
+Person.anonymous (){
+  age = 0;
+  aim = 'anonymous';
+}
+}
+
+//Named constructors
+>>>>>>> 90140b1cdde0423a19ecc0ec4e58589677d06726
 
   class User {
     int id = 0;
