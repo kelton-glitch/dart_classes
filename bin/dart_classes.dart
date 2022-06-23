@@ -13,7 +13,7 @@ void main() {
   print(user.toJson());
 
   final vicki = Person (age: 24, aim: 'Vicki');
-  vicki.aim = 'Nefarious Hacker';
+  //vicki._aim = 'Nefarious Hacker';
   print(vicki);
 }
 
